@@ -151,25 +151,25 @@ header{
     background: #aad5f6;
 }
 .slide-1 {
-    background: url('/valopedia/pages/maps/img/FRACTURE.jpg');
+    background: url('../img/FRACTURE.jpg');
 }
 .slide-2 {
-    background: url('/valopedia/pages/maps/img/BREEZE.png');
+    background: url('../img/BREEZE.png');
 }
 .slide-3 {
-    background: url('/valopedia/pages/maps/img/ICEBOX.png');
+    background: url('../img/ICEBOX.png');
 }
 .slide-4 {
-    background: url('/valopedia/pages/maps/img/BIND.png');
+    background: url('../img/BIND.png');
 }
 .slide-5 {
-    background: url('/valopedia/pages/maps/img/HAVEN.jpg');
+    background: url('../img/HAVEN.jpg');
 }
 .slide-6 {
-    background: url('/valopedia/pages/maps/img/SPLIT.jpg');
+    background: url('../img/SPLIT.jpg');
 }
 .slide-7 {
-    background: url('/valopedia/pages/maps/img/ASCENT.jpg');
+    background: url('../img/ASCENT.jpg');
 }
 
 .slide {
