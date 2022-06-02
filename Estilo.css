@@ -623,19 +623,30 @@ body.light .contenedor .card{
 /* responsive*/
 
 @media screen and (max-width:1200px){
-
+  .switch {
+    position: relative;
+    left: 93%;
+  }
 }
 
 @media screen and (max-width:768px){
 
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:500px){
+
+  .switch {
+    position: relative;
+    left: 86%;
+  }
+  .console-container {
+    left: -8%;
+  }
 
 }
 
 @media screen and (max-width:345px){
-  
+
 }
 
 /* responsive final */
