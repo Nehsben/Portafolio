@@ -619,3 +619,23 @@ body.light .contenedor .card{
 }
 
 /* top final */
+
+/* responsive*/
+
+@media screen and (max-width:1200px){
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:480px){
+
+}
+
+@media screen and (max-width:345px){
+  
+}
+
+/* responsive final */
