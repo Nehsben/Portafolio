@@ -339,4 +339,28 @@ header{
         left: 5%;
     }
 }
+
+@media screen and (max-width:345px){
+    .container_menu{
+        position: fixed;
+        bottom: 40%;
+        right: 15%;
+      }
+
+      .container_cover .svg img{
+        width: 100%;
+        bottom: 50%;
+    }
+
+    .container_cover .text{
+        position: fixed;
+        top: 50%;
+        left: 2%;
+        
+    }
+    .container_cover .text input{
+        padding: 18px 50px;
+    }
+    
+}
 /* responsive final*/
