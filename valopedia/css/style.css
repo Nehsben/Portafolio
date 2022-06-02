@@ -12,6 +12,7 @@ header{
     margin-top: 40px;
     position: fixed;
     z-index: 1;
+    padding: 40px;
 }
 
 .container_menu{
@@ -153,9 +154,23 @@ header{
 
 /* responsive*/
 
+@media screen and (max-width:1700px){
+    .container_cover{
+        background-position: 50%;
+    }
+}
+
 @media screen and (max-width:1200px){
     header{
         padding: 40px;
+    }
+
+    .container_cover{
+        background-position: -100px;
+    }
+
+    .container_cover .svg img{
+        width: 500px;
     }
 }
 
@@ -219,6 +234,44 @@ header{
 
      .menu #btn-menu:hover {
         background: white;
+    }
+
+    .container_cover{
+        background-position: 10%;
+    }
+
+    .container_cover .svg img{
+        width: 500px;
+        position: relative;
+        right: 70%;
+        bottom: 150px;
+    }
+
+    .container_cover .text{
+        position: relative;
+        top: 20%;
+        padding: 3%;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .container_cover{
+        background-position: 10%;
+    }
+    .container_cover .svg img{
+        width: 500px;
+        position: relative;
+        right: 70%;
+        bottom: 150px;
+    }
+
+    .container_cover .text{
+        position: relative;
+        top: 20%;
+        padding: 3%;
+        left: 5%;
     }
 }
 /* responsive final*/
