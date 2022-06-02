@@ -637,16 +637,37 @@ body.light .contenedor .card{
 
   .switch {
     position: relative;
-    left: 86%;
+    left: 87%;
   }
   .console-container {
     left: -8%;
+    font-size:300%;
+    padding-right: 1%;
   }
 
 }
 
-@media screen and (max-width:345px){
+@media screen and (max-width:480px){
+  .switch {
+    position: relative;
+    left: 85%;
+  }
+  .console-container {
+    left: -20%;
+    font-size:300%;
+    padding-right: 1%;
+  }
+}
 
+@media screen and (max-width:345px){
+  .console-container {
+    left: -30%;
+    font-size:250%;
+  }
+  .switch {
+    position: relative;
+    left: 79%;
+  }
 }
 
 /* responsive final */
