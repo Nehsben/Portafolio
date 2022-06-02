@@ -593,6 +593,10 @@ body.light .contenedor .card{
     position: relative;
     left: 93%;
   }
+
+  .icono-scroll {
+    top: 170%;
+}
 }
 
 @media screen and (max-width:768px){
@@ -623,6 +627,9 @@ body.light .contenedor .card{
     font-size:300%;
     padding-right: 1%;
   }
+  .icono-scroll {
+    left: 55%;
+}
 }
 
 @media screen and (max-width:345px){
@@ -634,43 +641,10 @@ body.light .contenedor .card{
     position: relative;
     left: 79%;
   }
+
+  .icono-scroll {
+    left: 45%;
+}
 }
 
 /* responsive final */
-
-
-
-/*  de mientras
-media (max-width:390px){
-  .panels{
-    flex-direction: column;
-  }
-
-  .section3{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    display: flex;
-    background-color: rgb(58, 57, 57);
-}
-
-.liquid {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: baseline;
-  align-items: flex-start;
-  
-}
-
-.liquid h2 {
-  margin: 3%;
-  position: absolute;
-  font-size: 4vw;
-  box-sizing: border-box;
- 
-} 
-}
-*/
