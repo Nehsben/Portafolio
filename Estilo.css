@@ -241,7 +241,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: flex-start;
-   left: 5%;
+    left: 9vh;
 
 }
 
@@ -597,10 +597,16 @@ body.light .contenedor .card{
   .icono-scroll {
     top: 170%;
 }
+  .liquid {
+  left: 5%;
+}
+.liquid h2 {
+  margin: 3%;
+  font-size: 500%;
+} 
 }
 
 @media screen and (max-width:768px){
-
 }
 
 @media screen and (max-width:500px){
@@ -613,6 +619,9 @@ body.light .contenedor .card{
     left: -8%;
     font-size:300%;
     padding-right: 1%;
+  }
+  .liquid {
+    left: 8%;
   }
 
 }
@@ -645,6 +654,15 @@ body.light .contenedor .card{
   .icono-scroll {
     left: 45%;
 }
+
+.liquid {
+  left: 10%;
+}
+
+.liquid h2 {
+  margin: 3%;
+  font-size: 300%;
+} 
 }
 
 /* responsive final */
