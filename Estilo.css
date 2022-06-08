@@ -665,6 +665,21 @@ body.light .contenedor .card{
 }
 }
 
+@media screen and (max-width:380px){
+  .switch {
+    position: relative;
+    left: 85%;
+  }
+  .console-container {
+    left: -20%;
+    font-size:300%;
+    padding-right: 1%;
+  }
+  .icono-scroll {
+    left: 45%;
+}
+}
+
 @media screen and (max-width:345px){
   .console-container {
     left: -30%;
