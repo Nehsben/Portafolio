@@ -69,80 +69,8 @@ header{
     display: none;
   }
   /* menu final */
-  
-  
-  /* responsive*/
-  
-  @media screen and (max-width:1200px){
-    header{
-        padding: 40px;
-    }
-  }
-  
-  @media screen and (max-width:720px){
-    .menu nav{
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 250px;
-        height: 100vh;
-        padding: 40px;
-        z-index: 1;
-        transition: all 300ms;
-        background-color: #00121a;
-    }
-  
-    .menu ul{
-        flex-direction: column;
-        margin-top: 40px;
-  
-    }
-  
-    .menu ul li{
-        margin-top: 30px;
-        margin-left: 0px;
-    }
-    #selected{
-        background: none;
-        padding: 0px;
-        border-radius: none;   
-        color: #00bc9a;
-     }
-  
-     .menu nav img{
-         display: block;
-         width: 200px;
-     }
-  
-     #back_menu{
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100vh;
-         background-color: rgba(0,0,0,0.5);
-         display: none;
-     }
-  
-     .menu #btn-menu {
-         width: 50px;
-         height: 50px;
-         background: #00bc9a;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         font-size: 24px;
-         border-radius: 50px;
-         cursor: pointer;
-     }
-  
-     .menu #btn-menu:hover {
-        background: white;
-    }
-  }
-  /* responsive final*/
-  
-/* text */
+
+  /* text */
   * {
     margin:0;
     padding:0;
@@ -209,43 +137,6 @@ header{
     }
   }
   
-  @media screen and (max-width: 600px){
-    h1{
-    text-align:center;
-    text-transform: uppercase;
-    color: #F1FAEE; 
-    font-size: 2.125rem;
-  }
-    
-    .roller{
-    height: 2.6rem; 
-    line-height: 2.125rem;  
-    }
-    
-    #spare-time {
-      font-size: 1rem;
-      letter-spacing: 0.1rem;
-    }
-    
-    .roller #rolltext {  
-    animation: slide-mob 5s infinite;  
-  }
-    
-    @keyframes slide-mob {
-    0%{
-      top:0;
-    }
-    25%{
-      top: -2.125rem;    
-    }
-    50%{
-      top: -4.25rem;
-    }
-    72.5%{
-      top: -6.375rem;
-    }
-  }
-  }
 
   /* text final*/
 
@@ -254,7 +145,8 @@ header{
 .svg img{
     position: fixed;
     left: 37%;
-    width: 500px;
+    width: 30%;
+    top: -5%;
     animation: move 4s linear infinite;
 }
 
@@ -272,3 +164,110 @@ header{
 
 
 /* img movimiento final */
+
+
+/* responsive  */
+@media screen and (max-width:1700px){
+  .container_cover{
+      background-position: 50%;
+  }
+
+}
+
+@media screen and (max-width:1200px){
+  header{
+      padding: 40px;
+  }
+  .svg img{
+    top: 0%;
+    width: 450px;
+    left: 33%;
+  }
+}
+@media screen and (max-width:768px){
+  .menu nav{
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 150px;
+      height: 100vh;
+      padding: 40px;
+      z-index: 1;
+      transition: all 300ms;
+      background-color: #00121a;
+  }
+
+  .container_menu{
+    position: fixed;
+    bottom: 40%;
+    right: 15%;
+  }
+  .menu ul{
+      flex-direction: column;
+      margin-top: 40px;
+
+  }
+
+  .menu ul li{
+      margin-top: 30px;
+      margin-left: 0px;
+  }
+
+  #selected{
+      background: none;
+      padding: 0px;
+      border-radius: none;   
+      color: #00bc9a;
+   }
+
+   .menu nav img{
+       display: block;
+       width: 200px;
+   }
+
+   #back_menu{
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100vh;
+       background-color: rgba(0,0,0,0.5);
+       display: none;
+   }
+
+   .menu #btn-menu {
+       width: 50px;
+       height: 50px;
+       background: #00bc9a;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 24px;
+       border-radius: 50px;
+       cursor: pointer;
+   }
+
+   .menu #btn-menu:hover {
+      background: white;
+  }
+
+  .svg img{
+    top: 0%;
+    width: 450px;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width:345px){
+  .container_menu{
+      position: fixed;
+      bottom: 40%;
+      right: 15%;
+    }
+  .svg img{
+      top: 5%;
+      width: 350px;
+      left: 5%;
+    }
+}
+/* responsive final*/
