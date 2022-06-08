@@ -258,6 +258,19 @@ header{
   }
 }
 
+@media screen and (max-width:480px){
+  .container_menu{
+      position: fixed;
+      bottom: 40%;
+      right: 15%;
+    }
+  .svg img{
+      top: 5%;
+      width: 350px;
+      left: 5%;
+    }
+}
+
 @media screen and (max-width:345px){
   .container_menu{
       position: fixed;
