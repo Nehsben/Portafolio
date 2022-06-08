@@ -605,6 +605,13 @@ body.light .contenedor .card{
   margin: 3%;
   font-size: 500%;
 } 
+.panels{
+  overflow-x: auto;
+}
+
+.panels::-webkit-scrollbar{
+ width: 0;
+}
 }
 
 @media screen and (max-width:768px){
