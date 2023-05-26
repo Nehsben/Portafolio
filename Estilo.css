@@ -410,6 +410,8 @@ body {
   border-radius: 25px;
   cursor: pointer;
   bottom: 2rem;
+  top:70%;
+  
 }
 
 .icono-scroll::before {
@@ -515,10 +517,6 @@ body {
     position: relative;
     left: 93%;
   }
-
-  .icono-scroll {
-    top: 170%;
-  }
   .liquid {
     left: 5%;
   }
@@ -579,9 +577,6 @@ body {
     font-size: 300%;
     padding-right: 1%;
   }
-  .icono-scroll {
-    left: 55%;
-  }
 }
 
 @media screen and (max-width: 380px) {
@@ -593,9 +588,6 @@ body {
     left: -20%;
     font-size: 300%;
     padding-right: 1%;
-  }
-  .icono-scroll {
-    left: 45%;
   }
   .panels {
     flex-wrap: wrap;
@@ -615,10 +607,6 @@ body {
   .switch {
     position: relative;
     left: 79%;
-  }
-
-  .icono-scroll {
-    left: 45%;
   }
 
   .liquid {
