@@ -1,53 +1,17 @@
- 
-consoleText(['Welcome', 'portafolio', 'Nahuel Benitez.'], 'text',['#4973ff','#4973ff','#4973ff']);
+function animateText(words, id) {
+  const target = document.getElementById(id);
+  let letterCount = 0, direction = 1, wordIndex = 0;
 
-function consoleText(words, id, colors) {
-  if (colors === undefined) colors = ['#fff'];
-  var visible = true;
-  var con = document.getElementById('console');
-  var letterCount = 1;
-  var x = 1;
-  var waiting = false;
-  var target = document.getElementById(id)
-  target.setAttribute('style', 'color:' + colors[0])
-  window.setInterval(function() {
-
-    if (letterCount === 0 && waiting === false) {
-      waiting = true;
-      target.innerHTML = words[0].substring(0, letterCount)
-      window.setTimeout(function() {
-        var usedColor = colors.shift();
-        colors.push(usedColor);
-        var usedWord = words.shift();
-        words.push(usedWord);
-        x = 1;
-        target.setAttribute('style', 'color:' + colors[0])
-        letterCount += x;
-        waiting = false;
-      }, 1000)
-    } else if (letterCount === words[0].length + 1 && waiting === false) {
-      waiting = true;
-      window.setTimeout(function() {
-        x = -1;
-        letterCount += x;
-        waiting = false;
-      }, 1000)
-    } else if (waiting === false) {
-      target.innerHTML = words[0].substring(0, letterCount)
-      letterCount += x;
+  const interval = setInterval(() => {
+    target.textContent = words[wordIndex].slice(0, letterCount);
+    if (direction === 1 && letterCount === words[wordIndex].length) direction = -1;
+    else if (direction === -1 && letterCount === 0) {
+      direction = 1;
+      wordIndex = (wordIndex + 1) % words.length;
     }
-  }, 120)
-  window.setInterval(function() {
-    if (visible === true) {
-      con.className = 'console-underscore hidden'
-      visible = false;
+    letterCount += direction;
+  }, 150);
 
-    } else {
-      con.className = 'console-underscore'
-
-      visible = true;
-    }
-  }, 400)
+  return () => clearInterval(interval); // Permite detener la animación.
 }
-
-
+animateText(['Welcome', 'Portfolio', 'Nahuel Benitez'], 'text');
